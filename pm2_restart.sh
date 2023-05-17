@@ -11,6 +11,6 @@ else
   # App is not running, start it
   echo "Starting $APP_NAME..."
   cd $APP_PATH
-  pm2 start app.js --name $APP_NAME
+  pm2 start index.js --name $APP_NAME
 fi
 
