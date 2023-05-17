@@ -1,5 +1,5 @@
 APP_NAME="kyc-app"
-APP_PATH="/home/testing/NodeApps/KYC-Application-Form"
+APP_PATH="/home/webntf/NodeJsApps/KYC-Application-Form"
 
 # Check if the app is already running
 if pm2 show $APP_NAME > /dev/null; then

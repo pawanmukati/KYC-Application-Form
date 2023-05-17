@@ -7,7 +7,7 @@ const morgan = require('morgan')
 
 env.config();
 
-const port = 8000;
+const port = 8001;
 
 app.use(express.json());
 app.use(cors());
