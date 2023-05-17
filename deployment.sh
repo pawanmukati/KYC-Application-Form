@@ -2,6 +2,6 @@
 
 echo "------------------Git checkout-----------------"
 git stash
-git pull origin master
+git pull origin main
 echo "----------------npm installation-------------------"             
 npm install
