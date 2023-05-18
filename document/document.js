@@ -140,7 +140,7 @@ investment_commercial_acc
                                        </tr>
                                        <tr>
                                           <td style="background-color: #f9f9f9;color: #000000;padding-top: 20px;padding-bottom: 20px;">
-                                             <div style="color: #000000;font-size: 21px;text-align: left;font-family: Verdana, sans-serif;font-weight: bold;margin-bottom: -1px;">Client Profile (KCY)</div>
+                                             <div style="color: #000000;font-size: 14px;text-align: left;font-family: Verdana, sans-serif;font-weight: bold;margin-bottom: -1px;">Client Profile (KCY)</div>
                                              <table style="
                                                 width: 100%;
                                                 " width="100%">
@@ -151,7 +151,7 @@ investment_commercial_acc
                                                             <tbody>
                                                                <tr>
                                                                   <th>
-                                                                     <h5 style="color: #000000;font-size: 14px;text-align: left;margin-top: 15px;margin-bottom: 15px;">(1). Customer / Contracting Partner (please provide a passport copy and utility bill as well)</h5>
+                                                                     <h5 style="color: #000000;font-size: 124x;text-align: left;margin-top: 15px;margin-bottom: 15px;">(1). Customer / Contracting Partner (please provide a passport copy and utility bill as well)</h5>
                                                                   </th>
                                                                </tr>
                                                                <tr>
@@ -171,7 +171,7 @@ investment_commercial_acc
                                                                                           </td>
                                                                                           <td width="75%">
                                                                                              ${cfc_open_corporate_account_name_company ? `<span style="/* display: flex; */">
-                                                                                                <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_name_company}`}</p>
+                                                                                                <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_name_company}`}</p>
                                                                                               </span>` : ''}
                                                                                           </td>
                                                                                        </tr>
@@ -204,7 +204,7 @@ investment_commercial_acc
                                                                                              vertical-align: top;
                                                                                              ">
                                                                                              ${cfc_open_corporate_account_directors_firstname ? `<span style="/* display: flex; */">
-                                                                                                <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_directors_firstname},
+                                                                                                <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_directors_firstname},
                                                                                                   ${cfc_open_corporate_account_directors_lastname},
                                                                                                   ${cfc_open_corporate_account_directors_nationality},
                                                                                                   ${cfc_open_corporate_account_directors_dob},
@@ -240,7 +240,7 @@ investment_commercial_acc
                                                                                           </td>
                                                                                           <td width="75%">
                                                                                              ${cfc_open_corporate_account_beneficial_owners_firstname ? `<span style="/* display: flex; */">
-                                                                                                <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_beneficial_owners_firstname},
+                                                                                                <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_beneficial_owners_firstname},
                                                                                                   ${cfc_open_corporate_account_settlor_lastname},
                                                                                                   ${cfc_open_corporate_account_beneficial_owners_nationality},
                                                                                                   ${cfc_open_corporate_account_beneficial_owners_dob},
@@ -274,7 +274,7 @@ investment_commercial_acc
                                                                                           </td>
                                                                                           <td width="75%">
                                                                                              ${cfc_open_corporate_account_settlor_firstname ? `<span style="/* display: flex; */">
-                                                                                                <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_settlor_firstname},
+                                                                                                <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_settlor_firstname},
                                                                                                   ${cfc_open_corporate_account_settlor_lastname},
                                                                                                   ${cfc_open_corporate_account_settlor_nationality},
                                                                                                   ${cfc_open_corporate_account_settlor_dob},
@@ -313,7 +313,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000;font-size: 16px;text-align: left;margin-top: 15px;margin-bottom: 15px;">Corporate account</h5>
+                                                                                 <h5 style="color: #000000;font-size: 164x;text-align: left;margin-top: 15px;margin-bottom: 15px;">Corporate account</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -332,7 +332,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_name_company ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_name_company}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_name_company}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -343,7 +343,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_jurisdiction_company ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_jurisdiction_company}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_jurisdiction_company}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -371,7 +371,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="75%">
                                                                                                          ${cfc_open_corporate_account_type_company ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_type_company}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_type_company}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -393,7 +393,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000;font-size: 16px;text-align: left;margin-top: 15px;margin-bottom: 15px;">Beneficial owners</h5>
+                                                                                 <h5 style="color: #000000;font-size: 164x;text-align: left;margin-top: 15px;margin-bottom: 15px;">Beneficial owners</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -412,7 +412,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_beneficial_owners_firstname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_beneficial_owners_firstname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_beneficial_owners_firstname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -423,7 +423,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_beneficial_owners_lastname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_beneficial_owners_lastname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_beneficial_owners_lastname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -451,7 +451,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_beneficial_owners_nationality ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_beneficial_owners_nationality}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_beneficial_owners_nationality}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -462,7 +462,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_beneficial_owners_dob ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_beneficial_owners_dob}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_beneficial_owners_dob}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -488,7 +488,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_beneficial_owners_CityOfResidence ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_beneficial_owners_CityOfResidence}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_beneficial_owners_CityOfResidence}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -499,7 +499,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_beneficial_owners_Relation_each_other ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_beneficial_owners_Relation_each_other}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_beneficial_owners_Relation_each_other}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -521,7 +521,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000;font-size: 16px;text-align: left;margin-top: 15px;margin-bottom: 15px;">Directors</h5>
+                                                                                 <h5 style="color: #000000;font-size: 164x;text-align: left;margin-top: 15px;margin-bottom: 15px;">Directors</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -540,7 +540,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_directors_firstname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_directors_firstname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_directors_firstname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -551,7 +551,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_directors_lastname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_directors_lastname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_directors_lastname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -579,7 +579,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_directors_nationality ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_directors_nationality}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_directors_nationality}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -590,7 +590,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_directors_dob ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_directors_dob}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_directors_dob}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -616,7 +616,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_directors_CityOfResidence ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_directors_CityOfResidence}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_directors_CityOfResidence}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -627,7 +627,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_directors_Relation_each_other ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_directors_Relation_each_other}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_directors_Relation_each_other}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -649,7 +649,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000;font-size: 16px;text-align: left;margin-top: 15px;margin-bottom: 15px;">Settlor</h5>
+                                                                                 <h5 style="color: #000000;font-size: 164x;text-align: left;margin-top: 15px;margin-bottom: 15px;">Settlor</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -668,7 +668,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_settlor_firstname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_settlor_firstname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_settlor_firstname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -679,7 +679,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_settlor_lastname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_settlor_lastname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_settlor_lastname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -708,7 +708,7 @@ investment_commercial_acc
                                                                                                       <td width="24%">
                                                                                                         
                                                                                                          ${cfc_open_corporate_account_settlor_nationality ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_settlor_nationality}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_settlor_nationality}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -719,7 +719,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_settlor_dob ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_settlor_dob}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_settlor_dob}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -747,7 +747,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_settlor_CityOfResidence ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_settlor_CityOfResidence}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_settlor_CityOfResidence}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -756,7 +756,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_open_corporate_account_settlor_Relation_each_other ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_open_corporate_account_settlor_Relation_each_other}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_open_corporate_account_settlor_Relation_each_other}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -778,7 +778,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (2). General Details
                                                                                  </h5>
                                                                               </th>
@@ -799,7 +799,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="75%">
                                                                                                          ${investment_commercial_acc ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${investment_commercial_acc}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${investment_commercial_acc}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -817,7 +817,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="75%">
                                                                                                          ${personal_corporate_acc ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${personal_corporate_acc}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${personal_corporate_acc}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -837,7 +837,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="60%">
                                                                                                          ${signatory_acc ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${signatory_acc}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${signatory_acc}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -855,7 +855,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="60%">
                                                                                                          ${signature_right ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${signature_right}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${signature_right}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -875,7 +875,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${bank_account_country ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${bank_account_country}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${bank_account_country}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -893,7 +893,27 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${particular_bank ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${particular_bank}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${particular_bank}`}</p>
+                                                                                                          </span>` : ''}
+                                                                                                      </td>
+                                                                                                   </tr>
+                                                                                                </tbody>
+                                                                                             </table>
+                                                                                          </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                          <td style="padding-top: 10px;padding-bottom: 10px;">
+                                                                                             <table style="border-spacing: 0px; width: 100%;">
+                                                                                                <tbody>
+                                                                                                   <tr>
+                                                                                                      <td width="30%">
+                                                                                                         <span style="/* display: flex; */">
+                                                                                                            <p style="">Open Other Country Bank account</p>
+                                                                                                         </span>
+                                                                                                      </td>
+                                                                                                      <td width="70%">
+                                                                                                         ${bank_account_country_other_optional ? `<span style="/* display: flex; */">
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${bank_account_country_other_optional}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -915,7 +935,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (3). Personal Information
                                                                                  </h5>
                                                                               </th>
@@ -936,7 +956,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="75%">
                                                                                                          ${firstname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${firstname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${firstname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -954,7 +974,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="75%">
                                                                                                          ${lastname ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${lastname}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${lastname}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -974,7 +994,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="60%">
                                                                                                          ${dob ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${dob}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${dob}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -992,7 +1012,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="60%">
                                                                                                          ${nationality ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${nationality}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${nationality}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1012,7 +1032,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${CityOfResidence ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${CityOfResidence}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${CityOfResidence}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1030,7 +1050,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${address ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${address}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${address}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1050,7 +1070,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${email ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${email}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${email}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1068,7 +1088,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${phone ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${phone}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${phone}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1090,7 +1110,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (4).Educational Information
                                                                                  </h5>
                                                                               </th>
@@ -1111,7 +1131,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="75%">
                                                                                                          ${study ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${study}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${study}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1129,7 +1149,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="75%">
                                                                                                          ${graduate ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${graduate}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${graduate}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1149,7 +1169,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="60%">
                                                                                                          ${profession ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${profession}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${profession}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1167,7 +1187,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="60%">
                                                                                                          ${cfc_studies_from_year ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_studies_from_year}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_studies_from_year}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1187,7 +1207,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${cfc_studies_to_year ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_studies_to_year}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_studies_to_year}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1205,7 +1225,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="70%">
                                                                                                          ${cfc_studies_title ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_studies_title}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_studies_title}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1227,7 +1247,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (5). Family Situation Alex Huber
                                                                                  </h5>
                                                                               </th>
@@ -1248,7 +1268,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="85%">
                                                                                                          ${MaritalStatus ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${MaritalStatus}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${MaritalStatus}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1270,7 +1290,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Partner</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Partner</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1284,16 +1304,15 @@ investment_commercial_acc
                                                                                                    <tr>
                                                                                                       <td width="15%">
                                                                                                          <span style="/* display: flex; */">
-                                                                                                            <p style="">First Name:</p>
+                                                                                                            <p style="">Full Name:</p>
                                                                                                          </span>
                                                                                                       </td>
                                                                                                       <td width="85%">
                                                                                                          
                                                                                                          ${partner_spouse ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${partner_spouse}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${partner_spouse}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
-                                                                                                      
                                                                                                    </tr>
                                                                                                 </tbody>
                                                                                              </table>
@@ -1314,7 +1333,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Child</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Child</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1333,7 +1352,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td>
                                                                                                          ${name_age_children ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${name_age_children}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${name_age_children}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1355,7 +1374,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Parents</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Parents</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1374,7 +1393,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${father ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${father}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${father}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1385,7 +1404,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${mother ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${mother}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${mother}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1407,7 +1426,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Siblings</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Siblings</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1426,7 +1445,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td>
                                                                                                          ${siblings ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${siblings}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${siblings}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1448,14 +1467,14 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (6). Professional Background Alex Huber
                                                                                  </h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Occupational Status:</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Occupational Status:</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1472,7 +1491,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${actual_employer ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${actual_employer}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${actual_employer}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1483,7 +1502,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="">
                                                                                                          ${employer_title ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${employer_title}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${employer_title}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1509,7 +1528,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${business_nature ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${business_nature}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${business_nature}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1520,10 +1539,10 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="">
                                                                                                          ${business_headquarter_country ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${business_headquarter_country}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${business_headquarter_country}`}</p>
                                                                                                           </span>` : ''}
                                                                                                           ${business_headquarter_city ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${business_headquarter_city}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${business_headquarter_city}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1549,7 +1568,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${employment_start_date ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${employment_start_date}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${employment_start_date}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1560,7 +1579,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="">
                                                                                                          ${company_website ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${company_website}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${company_website}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1582,7 +1601,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Shareholder:</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Shareholder:</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1601,7 +1620,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${approximate_turnover_company ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${approximate_turnover_company}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${approximate_turnover_company}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1612,7 +1631,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="20%">
                                                                                                          ${approx_employees ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${approx_employees}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${approx_employees}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1641,7 +1660,7 @@ investment_commercial_acc
                                                                                                       <td width="24%">
                                                                                                         
                                                                                                          ${share_of_company ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${share_of_company}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${share_of_company}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1652,7 +1671,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="20%">
                                                                                                          ${approx_value_of_company ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${approx_value_of_company}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${approx_value_of_company}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1674,7 +1693,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Previous Occupations:</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">Previous Occupations:</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1693,7 +1712,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="85%">
                                                                                                          ${worked_before ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${worked_before}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${worked_before}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       
@@ -1722,7 +1741,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${before_from_year ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${before_from_year}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${before_from_year}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1733,7 +1752,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${before_to_year ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${before_to_year}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${before_to_year}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1761,7 +1780,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${before_company_name ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${before_company_name}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${before_company_name}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1772,7 +1791,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${before_work_title ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${before_work_title}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${before_work_title}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1798,7 +1817,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${before_work_compensation_per_year ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${before_work_compensation_per_year}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${before_work_compensation_per_year}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1809,7 +1828,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="">
                                                                                                          ${political_exposed_person ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${political_exposed_person}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${political_exposed_person}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1831,7 +1850,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">(7).Joint signatory:</h5>
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">(7).Joint signatory:</h5>
                                                                               </th>
                                                                            </tr>
                                                                            <tr>
@@ -1850,7 +1869,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="60%">
                                                                                                          ${cfc_signature_right_people ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_signature_right_people}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_signature_right_people}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1878,7 +1897,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${cfc_signature_right_name ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_signature_right_name}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_signature_right_name}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1889,7 +1908,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="20%">
                                                                                                          ${cfc_signature_right_relation ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_signature_right_relation}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_signature_right_relation}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1911,7 +1930,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     Signatories beneficial owners:
                                                                                  </h5>
                                                                               </th>
@@ -1932,7 +1951,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%" style="vertical-align: top;">
                                                                                                          ${cfc_signatories_beneficial_owners_name ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_signatories_beneficial_owners_name}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_signatories_beneficial_owners_name}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1943,7 +1962,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24$" style="vertical-align: top;">
                                                                                                          ${cfc_signatories_beneficial_owners_relation ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${cfc_signatories_beneficial_owners_relation}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${cfc_signatories_beneficial_owners_relation}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -1965,7 +1984,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (8).Financial Information:
                                                                                  </h5>
                                                                               </th>
@@ -1986,10 +2005,10 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="" style="vertical-align: top;">
                                                                                                          ${amount_in_usd ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${amount_in_usd}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${amount_in_usd}`}</p>
                                                                                                           </span>` : ''}
                                                                                                           ${amount_in_usd_source ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${amount_in_usd_source}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${amount_in_usd_source}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -1998,7 +2017,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%">
                                                                                                          ${financial_worth_in_usd ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${financial_worth_in_usd}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${financial_worth_in_usd}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2016,7 +2035,7 @@ investment_commercial_acc
                                                                                     <tbody>
                                                                                        <tr>
                                                                                           <th>
-                                                                                             <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                             <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                                 Real estates :
                                                                                              </h5>
                                                                                           </th>
@@ -2037,7 +2056,7 @@ investment_commercial_acc
                                                                                                                   </td>
                                                                                                                   <td width="24%" style="vertical-align: top;">
                                                                                                                      ${assets_type ? `<span style="/* display: flex; */">
-                                                                                                                        <p style="/* border-bottom: 1px solid; */">${`${assets_type}`}</p>
+                                                                                                                        <p style=" border-bottom: 1px solid; ">${`${assets_type}`}</p>
                                                                                                                       </span>` : ''}
                                                                                                                   </td>
                                                                                                                   <td width="4%"></td>
@@ -2048,7 +2067,7 @@ investment_commercial_acc
                                                                                                                   </td>
                                                                                                                   <td width="24$" style="vertical-align: top;">
                                                                                                                      ${assets_country ? `<span style="/* display: flex; */">
-                                                                                                                        <p style="/* border-bottom: 1px solid; */">${`${assets_country}`}</p>
+                                                                                                                        <p style=" border-bottom: 1px solid; ">${`${assets_country}`}</p>
                                                                                                                       </span>` : ''}
                                                                                                                   </td>
                                                                                                                </tr>
@@ -2068,7 +2087,7 @@ investment_commercial_acc
                                                                                                                   </td>
                                                                                                                   <td width="24%" style="vertical-align: top;">
                                                                                                                      ${assets_city ? `<span style="/* display: flex; */">
-                                                                                                                        <p style="/* border-bottom: 1px solid; */">${`${assets_city}`}</p>
+                                                                                                                        <p style=" border-bottom: 1px solid; ">${`${assets_city}`}</p>
                                                                                                                       </span>` : ''}
                                                                                                                   </td>
                                                                                                                   <td width="4%"></td>
@@ -2079,7 +2098,7 @@ investment_commercial_acc
                                                                                                                   </td>
                                                                                                                   <td width="24$" style="vertical-align: top;">
                                                                                                                      ${assets_approx_value ? `<span style="/* display: flex; */">
-                                                                                                                        <p style="/* border-bottom: 1px solid; */">${`${assets_approx_value}`}</p>
+                                                                                                                        <p style=" border-bottom: 1px solid; ">${`${assets_approx_value}`}</p>
                                                                                                                       </span>` : ''}
                                                                                                                   </td>
                                                                                                                </tr>
@@ -2101,7 +2120,7 @@ investment_commercial_acc
                                                                                     <tbody style="font-size: 14px; vertical-align: inherit;">
                                                                                        <tr>
                                                                                           <th>
-                                                                                             <h5 style="color: #000000; font-size: 16px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                             <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                                 bankable assets:
                                                                                              </h5>
                                                                                           </th>
@@ -2116,7 +2135,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%" style="vertical-align: top;">
                                                                                                          ${name_of_bank ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${name_of_bank}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${name_of_bank}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -2127,7 +2146,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="" style="vertical-align: top;">
                                                                                                          ${bankable_assets_approx_amount ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${bankable_assets_approx_amount}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${bankable_assets_approx_amount}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2153,7 +2172,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%" style="vertical-align: top;">
                                                                                                          ${source_of_wealth ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${source_of_wealth}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${source_of_wealth}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -2164,7 +2183,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="" style="vertical-align: top;">
                                                                                                          ${source_of_wealth_amount ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${source_of_wealth_amount}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${source_of_wealth_amount}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2186,7 +2205,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (9).Investment Objectives and Risk Profile:
                                                                                  </h5>
                                                                               </th>
@@ -2205,7 +2224,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%" style="vertical-align: top;">
                                                                                                          ${investment_objective ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${investment_objective}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${investment_objective}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -2216,7 +2235,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="" style="vertical-align: top;">
                                                                                                          ${risk_tolerance ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${risk_tolerance}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${risk_tolerance}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2242,7 +2261,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%" style="vertical-align: top;">
                                                                                                          ${investment_experience ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${investment_experience}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${investment_experience}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -2253,7 +2272,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="" style="vertical-align: top;">
                                                                                                          ${investment_knowledge ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${investment_knowledge}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${investment_knowledge}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2275,7 +2294,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (10).Account Details:
                                                                                  </h5>
                                                                               </th>
@@ -2296,7 +2315,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="72%">
                                                                                                          ${approx_amount_transfer_new_bank_account ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${approx_amount_transfer_new_bank_account}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${approx_amount_transfer_new_bank_account}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2322,7 +2341,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%" style="vertical-align: top;">
                                                                                                          ${send_fund_from_bank_name ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${send_fund_from_bank_name}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${send_fund_from_bank_name}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -2333,7 +2352,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="" style="vertical-align: top;">
                                                                                                          ${send_fund_from_bank_country ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${send_fund_from_bank_country}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${send_fund_from_bank_country}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2359,7 +2378,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="24%" style="vertical-align: top;">
                                                                                                          ${transfers_intend_to_do_every_year ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${transfers_intend_to_do_every_year}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${transfers_intend_to_do_every_year}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                       <td width="4%"></td>
@@ -2370,7 +2389,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="" style="vertical-align: top;">
                                                                                                          ${transfers_intend_to_receive_every_year ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${transfers_intend_to_receive_every_year}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${transfers_intend_to_receive_every_year}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2392,7 +2411,7 @@ investment_commercial_acc
                                                                         <tbody>
                                                                            <tr>
                                                                               <th>
-                                                                                 <h5 style="color: #000000; font-size: 18px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
+                                                                                 <h5 style="color: #000000; font-size: 14px; text-align: left; margin-top: 15px; margin-bottom: 15px;">
                                                                                     (11).Conformation:
                                                                                  </h5>
                                                                               </th>
@@ -2413,7 +2432,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="72%">
                                                                                                          ${confirm_information_provided ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${confirm_information_provided}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${confirm_information_provided}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
@@ -2431,7 +2450,7 @@ investment_commercial_acc
                                                                                                       </td>
                                                                                                       <td width="72%">
                                                                                                          ${understand_information_provided ? `<span style="/* display: flex; */">
-                                                                                                            <p style="/* border-bottom: 1px solid; */">${`${understand_information_provided}`}</p>
+                                                                                                            <p style=" border-bottom: 1px solid; ">${`${understand_information_provided}`}</p>
                                                                                                           </span>` : ''}
                                                                                                       </td>
                                                                                                    </tr>
