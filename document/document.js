@@ -5,6 +5,7 @@ investment_commercial_acc
 ,signatory_acc
 ,signature_right
 ,bank_account_country
+,bank_account_country_other_optional
 ,particular_bank
 ,firstname
 ,lastname
