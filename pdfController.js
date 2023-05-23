@@ -35,7 +35,7 @@ exports.fetchPdf = (req, res) => {
 
 exports.sendPdf = (req, res) => {
   const recipientEmail = req.body.email; // Assuming the email value is sent as req.body.email
-console.log(recipientEmail)
+  console.log(req.body);
   pathToAttachment = path.join(__dirname, "invoice.pdf");
   attachment = fs.readFileSync(pathToAttachment).toString("base64");
 
@@ -46,16 +46,17 @@ console.log(recipientEmail)
     secure: true,
     use_authentication: true,
     auth: {
-      user: 'pawan.mukati@newtechfusion.com',
-      pass: 'Pawan@5842'
+      user: "pawan.mukati@newtechfusion.com",
+      pass: "Pawan@5842",
     },
     tls: { rejectUnauthorized: false },
   });
 
   smtpTransport.sendMail(
     {
-      from: 'pawan.mukati@newtechfusion.com',
-      to: `${recipientEmail}, suryakant@newtechfusion.com`,
+      from: "pawan.mukati@newtechfusion.com",
+      to: `${recipientEmail}`,
+      cc:'hello@bankopeny.com',
       subject: "KYC Application Data",
       html: `
       User KYC Application Data, Thanks.`,
