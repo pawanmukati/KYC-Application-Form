@@ -4,7 +4,6 @@ module.exports = ({
 	,personal_corporate_acc
 	,bank_account_country
 	,particular_bank
-	,bank_account_open_other_optional
 	,firstname
 	,lastname
 	,dob
@@ -96,7 +95,6 @@ module.exports = ({
 })=>{
   const today = new Date()
   return `
- 
  
 <!DOCTYPE html
 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -481,29 +479,7 @@ style="min-width:650px; padding:0 !important; margin:0 !important; display:block
 															</table>
 														</th>
 													</tr>
-													<tr>
-														<th width="180" class="column"
-															style="font-size:0pt; line-height:0pt; Margin:0; font-weight:normal; padding:0; margin:0; Magin:0"
-															valign="top">
-															<table width="100%" border="0" cellspacing="0"
-																cellpadding="0">
-																<tr>
-																	<td width="45%"  style="padding-bottom: 10px;" >
-																		<div class="h3-center"
-																			style="color:#000000; font-family:Arial; font-size:12px; line-height:20px; text-align:left;">
-																			Open Bank account Other Country (Optional):</div>
-																	</td>
-																	<td width="55%"  style="padding-bottom: 10px;">
-																		<div class="text-center"
-																			style="color:#0e0e0e; font-family:Arial; font-size:12px; line-height:24px; text-align:left">
-																			${bank_account_open_other_optional ? `<span style="/* display: flex; */">
-																				<p style=" border-bottom: 1px solid #0e0e0e; ">${`${bank_account_open_other_optional}`}</p>
-																			  </span>` : ''}</div>
-																	</td>
-																</tr>
-															</table>
-														</th>
-													</tr>
+													
 												</table>
 											</td>
 										</tr>
@@ -3552,8 +3528,7 @@ style="min-width:650px; padding:0 !important; margin:0 !important; display:block
 <!-- END Container -->
 </body>
 
-</html> 
-   
+</html>  
   `
 
 }
