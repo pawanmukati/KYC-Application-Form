@@ -4,7 +4,7 @@ const pdf = require("html-pdf");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const fs = require("fs");
-const puppeteer = require('puppeteer');
+// const puppeteer = require('puppeteer');
 const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
@@ -22,7 +22,7 @@ exports.createPdf = async (req, res) => {
     }
   };
   try {
-    const browser = await puppeteer.launch();
+    // const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.setContent(pdfTemplate(req.body));
     await page.pdf({ path: 'invoice.pdf', format: 'A4' });
