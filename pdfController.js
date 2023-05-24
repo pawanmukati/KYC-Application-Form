@@ -20,7 +20,7 @@ exports.createPdf = (req, res) => {
     }
   };
   
-  pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
+  pdf.create(pdfTemplate(req.body)).toFile('invoice.pdf', (err) => {
     if (err) {
       console.log(err);
     }
