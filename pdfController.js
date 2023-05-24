@@ -4,25 +4,25 @@ const pdf = require("html-pdf");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const fs = require("fs");
-// const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer');
 const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
 
 exports.createPdf = async (req, res) => {
-  const options = {
-    phantomPath: '/path/to/phantomjs/binary', // Replace with the actual path to PhantomJS binary
-    format: 'A4',
-    orientation: 'portrait',
-    border: {
-      top: '0.5in',
-      right: '0.5in',
-      bottom: '0.5in',
-      left: '0.5in'
-    }
-  };
+  // const options = {
+  //   phantomPath: '/path/to/phantomjs/binary', // Replace with the actual path to PhantomJS binary
+  //   format: 'A4',
+  //   orientation: 'portrait',
+  //   border: {
+  //     top: '0.5in',
+  //     right: '0.5in',
+  //     bottom: '0.5in',
+  //     left: '0.5in'
+  //   }
+  // };
   try {
-    // const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.setContent(pdfTemplate(req.body));
     await page.pdf({ path: 'invoice.pdf', format: 'A4' });
