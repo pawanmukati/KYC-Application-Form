@@ -4,12 +4,14 @@ const pdf = require("html-pdf");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const fs = require("fs");
+const puppeteer = require('puppeteer');
 const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
 
-exports.createPdf = (req, res) => {
+exports.createPdf = async (req, res) => {
   const options = {
+    phantomPath: '/path/to/phantomjs/binary', // Replace with the actual path to PhantomJS binary
     format: 'A4',
     orientation: 'portrait',
     border: {
@@ -19,13 +21,24 @@ exports.createPdf = (req, res) => {
       left: '0.5in'
     }
   };
-  
-  pdf.create(pdfTemplate(req.body)).toFile('invoice.pdf', (err) => {
-    if (err) {
-      console.log(err);
-    }
-    res.send('pdf generated');
-  });
+  try {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.setContent(pdfTemplate(req.body));
+    await page.pdf({ path: 'invoice.pdf', format: 'A4' });
+    await browser.close();
+
+    res.send('PDF generated successfully!');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error generating PDF');
+  }
+  // pdf.create(pdfTemplate(req.body)).toFile('invoice.pdf', (err) => {
+  //   if (err) {
+  //     console.log(err);
+  //   }
+  //   res.send('pdf generated');
+  // });
   
 };
 
