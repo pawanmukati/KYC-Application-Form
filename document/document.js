@@ -61,6 +61,7 @@ module.exports = ({
 	,transfers_intend_to_do_every_year
 	,transfers_intend_to_receive_every_year
 	,cfc_signature_right_people
+    ,full_name_additional_signatory
 	,full_name_additional_signatory_one
 	,full_name_additional_signatory_two
 	,full_name_additional_signatory_three
