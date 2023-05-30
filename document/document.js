@@ -95,10 +95,6 @@ module.exports = ({
            padding: 0;
            margin: 0;
            }
-           body{
-            width: 650px; 
-            margin: 0 auto; 
-           }
         </style>
      </head>
      <body>
@@ -106,7 +102,7 @@ module.exports = ({
            <tbody>
               <tr>
                  <td>
-                    <table border="0" style="width: 100%; background-color: #ffffff; border: 1px solid #000000; font-family: 'Roboto', sans-serif; color: #000000; line-height: 1.4; padding: 32px 16px; margin: 15px auto;">
+                    <table border="0" style="width: 650px; background-color: #ffffff; border: 1px solid #000000; font-family: 'Roboto', sans-serif; color: #000000; line-height: 1.4; padding: 32px 16px; margin: 15px auto;">
                        <thead>
                           <tr>
                              <th class="column"
