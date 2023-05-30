@@ -13,10 +13,7 @@ exports.createPdf = async (req, res) => {
   const page = pdfDoc.addPage();
   const { width, height } = page.getSize();
 
-  page.setViewport({ width, height });
-
   await page.pdf(htmlContent, {
-    format: "a4",
     printBackground: true,
   });
 
