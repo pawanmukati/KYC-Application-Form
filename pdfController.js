@@ -34,7 +34,8 @@ exports.createPdf = (req, res) => {
   let file = pdfTemplate(req.body);
   fs.writeFileSync('./document/invoice.html', file, 'binary');
   (async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({  headless:true,
+      args: ["--no-sandbox"]});
     const page = await browser.newPage();
     let pathStatic = req.protocol + '://' + req.get('host') + "/static/invoice.html";
     await page.goto(pathStatic, {waitUntil: 'networkidle2'});
