@@ -1,33 +1,45 @@
 // we use html pdf
 
-const pdf = require("html-pdf");
-const path = require("path");
-const nodemailer = require("nodemailer");
-const fs = require("fs");
-const pdfTemplate = require("./document/document");
-const env = require("dotenv");
+const puppeteer = require('puppeteer');
+const path = require('path');
+const nodemailer = require('nodemailer');
+const fs = require('fs');
+const pdfTemplate = require('./document/document');
+const env = require('dotenv');
 env.config();
 
-exports.createPdf = (req, res) => {
-  const options = {
-    format: 'A4',
-    orientation: 'portrait',
-    border: {
-      top: '0.5in',
-      right: '0.5in',
-      bottom: '0.5in',
-      left: '0.5in'
-    }
-  };
-  
-  pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
-    if (err) {
-      console.error(err);
-      res.status(500).send('Error generating PDF');
-    } else {
-      res.send('PDF generated successfully!');
-    }
-  });
+exports.createPdf = async (req, res) => {
+  try {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+
+    // Set the viewport size to ensure the content fits properly
+    await page.setViewport({ width: 1200, height: 800 });
+
+    const content = pdfTemplate(req.body); // Assuming pdfTemplate returns the HTML content
+
+    await page.setContent(content);
+    
+    const pdfOptions = {
+      path: 'invoice.pdf',
+      format: 'A4',
+      printBackground: true,
+      margin: {
+        top: '0.5in',
+        right: '0.5in',
+        bottom: '0.5in',
+        left: '0.5in',
+      },
+    };
+
+    await page.pdf(pdfOptions);
+    await browser.close();
+
+    res.send('PDF generated successfully!');
+  } catch (error) {
+    console.error('Error generating PDF:', error);
+    res.status(500).send('Error generating PDF');
+  }
 };
 
 exports.fetchPdf = (req, res) => {
