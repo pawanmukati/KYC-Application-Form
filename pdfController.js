@@ -10,6 +10,7 @@ env.config();
 
 exports.createPdf = async (req, res) => {
   try {
+    process.env.PUPPETEER_PRODUCT = 'chrome';
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
