@@ -81,7 +81,7 @@ module.exports = ({
     
 })=>{
   const today = new Date()
-  return `<!DOCTYPE html>
+  return `
   <html lang="en">
      <head>
         <title>KYC AppLication Data</title>
