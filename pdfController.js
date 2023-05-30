@@ -37,7 +37,7 @@ exports.createPdf = (req, res) => {
             autoPaging: 'text',
             margin: 10
         }).then(() => {
-            doc.save("invoice"+".pdf");
+//             doc.save("invoice"+".pdf");
             res.send('PDF generated successfully!');
         });
 };
