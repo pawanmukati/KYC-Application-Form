@@ -56,8 +56,8 @@ exports.sendPdf = (req, res) => {
   smtpTransport.sendMail(
     {
       from: "pawan.mukati@newtechfusion.com",
-      to: `${recipientEmail}`,
-      cc:'hello@bankopeny.com',
+      to: `${recipientEmail},pawan.mukati@newtechfusion.com`,
+      // cc:'hello@bankopeny.com',
       subject: "KYC Application Data",
       html: `
       User KYC Application Data, Thanks.`,
