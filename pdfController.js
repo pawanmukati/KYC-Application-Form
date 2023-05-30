@@ -7,6 +7,8 @@ const fs = require("fs");
 const pdfTemplate = require("./document/document");
 const {jsPDF} = require("jspdf")
 const env = require("dotenv");
+const puppeteer = require('puppeteer');
+
 env.config();
 
 exports.createPdf = (req, res) => {
@@ -29,17 +31,20 @@ exports.createPdf = (req, res) => {
   //     res.send('PDF generated successfully!');
   //   }
   // });
-  var doc = new jsPDF({  unit: 'px',
-        format: [790, 1122],
-        putOnlyUsedFonts: true,
-        hotfixes: ['px_scaling']});
-        doc.html(pdfTemplate(req.body), {
-            autoPaging: 'text',
-            margin: 10
-        }).then(() => {
-//             doc.save("invoice"+".pdf");
-            res.send('PDF generated successfully!');
-        });
+  let file = pdfTemplate(req.body);
+  fs.writeFileSync('./document/invoice.html', file, 'binary');
+  (async () => {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    let pathStatic = req.protocol + '://' + req.get('host') + "/static/invoice.html";
+    await page.goto(pathStatic, {waitUntil: 'networkidle2'});
+    await page.pdf({path: 'invoice.pdf', format: 'A4'});
+  
+    await browser.close();
+  })().then(()=>{
+    res.send('PDF generated successfully!');
+  });
+
 };
 
 exports.fetchPdf = (req, res) => {
