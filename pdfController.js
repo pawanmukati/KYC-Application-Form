@@ -1,39 +1,33 @@
-const fs = require("fs");
+// we use html pdf
+
+const pdf = require("html-pdf");
 const path = require("path");
 const nodemailer = require("nodemailer");
-const { jsPDF } = require("jspdf");
-const html2pdf = require("html2pdf.js");
+const fs = require("fs");
 const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
 
 exports.createPdf = (req, res) => {
-  const doc = new jsPDF();
   const options = {
-    format: "A4",
-    orientation: "portrait",
-    // Adjust margins if needed
-    margin: {
-      top: 10,
-      right: 10,
-      bottom: 10,
-      left: 10,
-    },
+    format: 'A4',
+    orientation: 'portrait',
+    border: {
+      top: '0.5in',
+      right: '0.5in',
+      bottom: '0.5in',
+      left: '0.5in'
+    }
   };
-
-  const content = pdfTemplate(req.body); // Assuming pdfTemplate returns the HTML content
-
-  html2pdf()
-    .set({ margin: options.margin })
-    .from(content)
-    .save("invoice.pdf")
-    .then(() => {
-      res.send("PDF generated successfully!");
-    })
-    .catch((error) => {
-      console.error("Error generating PDF:", error);
-      res.status(500).send("Failed to generate PDF.");
-    });
+  
+  pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Error generating PDF');
+    } else {
+      res.send('PDF generated successfully!');
+    }
+  });
 };
 
 exports.fetchPdf = (req, res) => {
@@ -43,14 +37,15 @@ exports.fetchPdf = (req, res) => {
 exports.sendPdf = (req, res) => {
   const recipientEmail = req.body.email; // Assuming the email value is sent as req.body.email
   console.log(req.body);
-  const pathToAttachment = path.join(__dirname, "invoice.pdf");
-  const attachment = fs.readFileSync(pathToAttachment).toString("base64");
+  pathToAttachment = path.join(__dirname, "invoice.pdf");
+  attachment = fs.readFileSync(pathToAttachment).toString("base64");
 
   let smtpTransport = nodemailer.createTransport({
     host: "smtp.gmail.com",
     service: "Gmail",
     port: 465,
     secure: true,
+    use_authentication: true,
     auth: {
       user: "pawan.mukati@newtechfusion.com",
       pass: "Pawan@5842",
@@ -62,14 +57,16 @@ exports.sendPdf = (req, res) => {
     {
       from: "pawan.mukati@newtechfusion.com",
       to: `${recipientEmail},pawan.mukati@newtechfusion.com`,
+      // cc:'hello@bankopeny.com',
       subject: "KYC Application Data",
       html: `
       User KYC Application Data, Thanks.`,
       attachments: [
         {
+          content: attachment,
           filename: "invoice.pdf",
           contentType: "application/pdf",
-          content: Buffer.from(attachment, "base64"),
+          path: pathToAttachment,
         },
       ],
     },
@@ -82,3 +79,5 @@ exports.sendPdf = (req, res) => {
     }
   );
 };
+
+
