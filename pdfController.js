@@ -1,37 +1,32 @@
 const fs = require("fs");
 const path = require("path");
 const nodemailer = require("nodemailer");
-const { jsPDF } = require("jspdf");
+const { PDFDocument } = require("pdf-lib");
 const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
 
-exports.createPdf = (req, res) => {
-  const doc = new jsPDF();
+exports.createPdf = async (req, res) => {
+  const htmlContent = pdfTemplate(req.body); // Assuming pdfTemplate returns the HTML content
 
-  const options = {
-    format: "A4",
-    orientation: "portrait",
-    // Adjust margins if needed
-    margin: {
-      top: 10,
-      right: 10,
-      bottom: 10,
-      left: 10,
-    },
-  };
+  const pdfDoc = await PDFDocument.create();
+  const page = pdfDoc.addPage();
+  const { width, height } = page.getSize();
 
-  const content = pdfTemplate(req.body); // Assuming pdfTemplate returns the HTML content
+  page.setViewport({ width, height });
 
-  doc.html(content, {
-    callback: () => {
-      doc.save("invoice.pdf");
-      res.send("PDF generated successfully!");
-    },
-    x: options.margin.left,
-    y: options.margin.top,
+  await page.pdf(htmlContent, {
+    format: "a4",
+    printBackground: true,
   });
+
+  const pdfBytes = await pdfDoc.save();
+
+  fs.writeFileSync("invoice.pdf", pdfBytes);
+
+  res.send("PDF generated successfully!");
 };
+
 
 exports.fetchPdf = (req, res) => {
   res.sendFile(path.join(__dirname, "invoice.pdf"));
