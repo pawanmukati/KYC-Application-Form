@@ -29,6 +29,7 @@ exports.createPdf = (req, res) => {
   //     res.send('PDF generated successfully!');
   //   }
   // });
+  res.send(pdfTemplate(req.body));
   var doc = new jsPDF({  unit: 'px',
         format: [790, 1122],
         putOnlyUsedFonts: true,
