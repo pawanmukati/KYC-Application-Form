@@ -5,29 +5,41 @@ const path = require("path");
 const nodemailer = require("nodemailer");
 const fs = require("fs");
 const pdfTemplate = require("./document/document");
+const {jsPDF} = require("jspdf")
 const env = require("dotenv");
 env.config();
 
 exports.createPdf = (req, res) => {
-  const options = {
-    format: 'A4',
-    orientation: 'portrait',
-    border: {
-      top: '0.5in',
-      right: '0.5in',
-      bottom: '0.5in',
-      left: '0.5in'
-    }
-  };
+  // const options = {
+  //   format: 'A4',
+  //   orientation: 'portrait',
+  //   border: {
+  //     top: '0.5in',
+  //     right: '0.5in',
+  //     bottom: '0.5in',
+  //     left: '0.5in'
+  //   }
+  // };
   
-  pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
-    if (err) {
-      console.error(err);
-      res.status(500).send('Error generating PDF');
-    } else {
-      res.send('PDF generated successfully!');
-    }
-  });
+  // pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
+  //   if (err) {
+  //     console.error(err);
+  //     res.status(500).send('Error generating PDF');
+  //   } else {
+  //     res.send('PDF generated successfully!');
+  //   }
+  // });
+  var doc = new jsPDF({  unit: 'px',
+        format: [790, 1122],
+        putOnlyUsedFonts: true,
+        hotfixes: ['px_scaling']});
+        doc.html(pdfTemplate(req.body), {
+            autoPaging: 'text',
+            margin: 10
+        }).then(() => {
+            doc.save("invoice"+".pdf");
+            res.send('PDF generated successfully!');
+        });
 };
 
 exports.fetchPdf = (req, res) => {
