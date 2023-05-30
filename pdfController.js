@@ -1,29 +1,40 @@
 const fs = require("fs");
 const path = require("path");
 const nodemailer = require("nodemailer");
-const { PDFDocument } = require("pdf-lib");
+const { jsPDF } = require("jspdf");
+const html2pdf = require("html2pdf.js");
 const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
 
-exports.createPdf = async (req, res) => {
-  const htmlContent = pdfTemplate(req.body); // Assuming pdfTemplate returns the HTML content
+exports.createPdf = (req, res) => {
+  const doc = new jsPDF();
+  const options = {
+    format: "A4",
+    orientation: "portrait",
+    // Adjust margins if needed
+    margin: {
+      top: 10,
+      right: 10,
+      bottom: 10,
+      left: 10,
+    },
+  };
 
-  const pdfDoc = await PDFDocument.create();
-  const page = pdfDoc.addPage();
-  const { width, height } = page.getSize();
+  const content = pdfTemplate(req.body); // Assuming pdfTemplate returns the HTML content
 
-  await page.pdf(htmlContent, {
-    printBackground: true,
-  });
-
-  const pdfBytes = await pdfDoc.save();
-
-  fs.writeFileSync("invoice.pdf", pdfBytes);
-
-  res.send("PDF generated successfully!");
+  html2pdf()
+    .set({ margin: options.margin })
+    .from(content)
+    .save("invoice.pdf")
+    .then(() => {
+      res.send("PDF generated successfully!");
+    })
+    .catch((error) => {
+      console.error("Error generating PDF:", error);
+      res.status(500).send("Failed to generate PDF.");
+    });
 };
-
 
 exports.fetchPdf = (req, res) => {
   res.sendFile(path.join(__dirname, "invoice.pdf"));
