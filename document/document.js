@@ -96,7 +96,7 @@ module.exports = ({
            margin: 0;
            }
            body{
-            width: 800px; 
+            width: 650px; 
             margin: 0 auto; 
            }
         </style>
