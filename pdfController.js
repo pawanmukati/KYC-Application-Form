@@ -1,35 +1,35 @@
-const jsPDF = require('jspdf');
+const fs = require("fs");
 const path = require("path");
 const nodemailer = require("nodemailer");
-const fs = require("fs");
+const { jsPDF } = require("jspdf");
 const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
 
 exports.createPdf = (req, res) => {
   const doc = new jsPDF();
-  
+
   const options = {
-    format: 'A4',
-    orientation: 'portrait',
+    format: "A4",
+    orientation: "portrait",
     // Adjust margins if needed
     margin: {
       top: 10,
       right: 10,
       bottom: 10,
-      left: 10
-    }
+      left: 10,
+    },
   };
 
   const content = pdfTemplate(req.body); // Assuming pdfTemplate returns the HTML content
 
   doc.html(content, {
-    callback: (pdf) => {
-      pdf.save('invoice.pdf');
-      res.send('PDF generated successfully!');
+    callback: () => {
+      doc.save("invoice.pdf");
+      res.send("PDF generated successfully!");
     },
     x: options.margin.left,
-    y: options.margin.top
+    y: options.margin.top,
   });
 };
 
