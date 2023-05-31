@@ -11,7 +11,7 @@ env.config();
 
 exports.createPdf = async (req, res) => {
   try {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({headless: 'new',args: ["--no-sandbox"] });
     const page = await browser.newPage();
 
     // Read the HTML template file
