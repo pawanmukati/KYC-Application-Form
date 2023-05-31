@@ -11,7 +11,8 @@ env.config();
 
 exports.createPdf = async (req, res) => {
   try {
-    const browser = await puppeteer.launch({headless: 'new',args: ["--no-sandbox"] });
+    // const browser = await puppeteer.launch({headless: 'new',args: ["--no-sandbox"] });
+    const browser = await puppeteer.launch({ignoreDefaultArgs: ['--disable-extensions']})
     const page = await browser.newPage();
 
     // Read the HTML template file
