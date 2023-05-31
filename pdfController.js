@@ -10,8 +10,8 @@ env.config();
 
 exports.createPdf = (req, res) => {
   const options = {
-    format: 'A4',
-    
+    format: 'Letter',
+    border: '1cm'
   };
 
   pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
