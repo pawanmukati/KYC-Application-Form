@@ -102,7 +102,7 @@ module.exports = ({
            <tbody>
               <tr>
                  <td>
-                    <table border="0" style="width: 770px; background-color: #ffffff;  font-family: 'Roboto', sans-serif; color: #000000; line-height: 1.4; padding: 15px 16px 32px; margin: 15px auto;">
+                    <table border="0" style="width: 650px; background-color: #ffffff;  font-family: 'Roboto', sans-serif; color: #000000; line-height: 1.4; padding: 15px 16px 32px; margin: 15px auto;">
                        <thead>
                           <tr>
                              <th class="column"
