@@ -14,7 +14,7 @@ exports.createPdf = async (req, res) => {
     // const browser = await puppeteer.launch({headless: false,args: ["--no-sandbox"] });
     const browser = await puppeteer.launch({
       executablePath: '/usr/bin/chromium-browser',
-      headless: true,
+      headless: false,
       args: ['--no-sandbox']
     });
     // const browser = await puppeteer.launch({ignoreDefaultArgs: ['--disable-extensions']})
