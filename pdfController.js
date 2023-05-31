@@ -10,24 +10,24 @@ env.config();
 
 exports.createPdf = (req, res) => {
   const options = {
-    format: 'Letter',
-    margin: {
+    format: 'A4',
+    border: {
       top: '0.5in',
       right: '0.5in',
       bottom: '0.5in',
-      left: '0.5in'
+      left: '0.5in',
     },
-    header: {
-      height: '1.5in',
-      contents: '<div style="margin-top: 40px;"></div>'
-    },
-    footer: {
-      height: '0.5in',
-      contents: '<div style="margin-bottom: 40px;"></div>'
-    }
+    // Add a custom CSS rule to prevent content cutting
+    height: '11.69in', // Adjust the page height as needed
+    width: '8.27in', // Adjust the page width as needed
   };
 
-  pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
+  // Read the HTML template file
+  const htmlTemplatePath = path.resolve(__dirname, './document/invoice.html');
+  const htmlTemplate = fs.readFileSync(htmlTemplatePath, 'utf8');
+
+  // Convert the HTML template to PDF
+  pdf.create(htmlTemplate, options).toFile('invoice.pdf', (err) => {
     if (err) {
       console.error(err);
       res.status(500).send('Error generating PDF');
@@ -36,8 +36,6 @@ exports.createPdf = (req, res) => {
     }
   });
 };
-
-
 exports.fetchPdf = (req, res) => {
   res.sendFile(path.join(__dirname, "invoice.pdf"));
 };
