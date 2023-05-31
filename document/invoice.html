@@ -1,87 +1,4 @@
 
-module.exports = ({
-	investment_commercial_acc
-	,personal_corporate_acc
-	,bank_account_country
-	,particular_bank
-	,firstname
-	,lastname
-	,dob
-	,nationality
-	,address
-	,CountryOfResidence
-	,CityOfResidence
-	,MaritalStatus
-	,email
-	,phone
-	,partner_spouse
-	,name_age_children
-	,father
-	,mother
-	,siblings
-	,University_institution_graduate
-	,graduate_year
-	,profession
-	,occupational_status
-	,actual_employer
-	,employer_title
-	,business_nature
-	,Country_Business_headquarter
-	,employment_start_date
-	,company_website
-	,share_of_company
-	,annual_average_total_compensation
-	,approx_employees
-	,political_exposed_person
-	,previous_employer
-	,previous_work_title
-	,previous_business_nature
-	,previous_Country_Business_headquarter
-	,previous_start_year
-	,previous_to_year
-	,previous_company_website
-	,previous_company_share
-	,previous_company_annual_average_total_compensation
-	,previous_company_approx_employees
-
-	,Avg_Annual_total_Income
-	,own_real_estate_object
-	,your_real_estate_investments
-	,your_real_estate_investments_located
-	,list_name_of_bankable_assets
-	,bankable_assets_total_in_USD
-	,source_of_your_wealth
-	,investment_objective
-	,risk_tolerance
-	,investment_experience
-	,investment_horizon
-	,Investment_Knowledge_Experience
-	,approx_amount_transfer_new_bank_account
-	,From_which_bank_country_send_funds
-	,transfers_intend_to_do_every_year
-	,transfers_intend_to_receive_every_year
-	,cfc_signature_right_people
-    ,full_name_additional_signatory
-	,full_name_additional_signatory_one
-	,full_name_additional_signatory_two
-	,full_name_additional_signatory_three
-	,full_name_additional_signatory_four
-	,full_name_additional_signatory_five
-	,name_of_company
-	,kind_of_company
-	,names_beneficial_owners
-	,names_directors_company
-	,names_settlor_trust_foundation
-	,desired_bank_any_bank_particular
-	,potential_independent_wealth_manager
-	,confirm_email
-	,submit
-	,confirm
-
-    
-})=>{
-  const today = new Date()
-  return `
   <html lang="en">
      <head>
         <title>KYC AppLication Data</title>
@@ -102,7 +19,7 @@ module.exports = ({
            <tbody>
               <tr>
                  <td>
-                    <table border="0" style="width: 770px; background-color: #ffffff; border: 1px solid #000000; font-family: 'Roboto', sans-serif; color: #000000; line-height: 1.4; padding: 32px 16px; margin: 15px auto;">
+                    <table border="0" style="width: 800px; background-color: #ffffff; border: 1px solid #000000; font-family: 'Roboto', sans-serif; color: #000000; line-height: 1.4; padding: 32px 16px; margin: 15px auto;">
                        <thead>
                           <tr>
                              <th class="column"
@@ -151,16 +68,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Type of account:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${investment_commercial_acc ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${investment_commercial_acc}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            investment account</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px;">
                                             <span style="display: block; font-size: 14px; vertical-align: middle;">Personal/corporate:</span>
                                          </td>
                                          <td width="25%" style="vertical-align: middle; border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${personal_corporate_acc ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${personal_corporate_acc}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            personal account</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -169,22 +86,22 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Desired Jurisdiction:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${bank_account_country ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${bank_account_country}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Switzerland</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px;">
                                             <span style="display: block; font-size: 14px; vertical-align: middle;">Preferred Bank:</span>
                                          </td>
                                          <td width="25%" style="vertical-align: middle; border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${particular_bank ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${particular_bank}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Reyl Intesa Sanpaolo</span>
                                          </td>
                                       </tr>
                                       <tr style="background-color: #f1f3f7;">
                                          <td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000;
                                             border-left: 1px solid #000000; font-weight: 600;font-size: 14px; padding: 8px; vertical-align: middle; "
-                                            colspan="6">(2) Personal Information of ${`${firstname}`} ${`${lastname}`}</td>
+                                            colspan="6">(2) Personal Information of saasasas sasasas</td>
                                       </tr>
                                       <tr>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000;
@@ -192,16 +109,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">First Name:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${firstname ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${firstname}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            saasasas</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Last Name:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${lastname ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${lastname}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sasasas</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -210,16 +127,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Date of Birth:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${dob ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${dob}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1999-05-02</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Nationality:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${nationality ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${nationality}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Lebanese,Liberian</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -228,16 +145,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">City of Residence:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${CityOfResidence ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${CityOfResidence}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdsdsads</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Address:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${address ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${address}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            asasasasa</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -246,8 +163,8 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Country of Residence::</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${CountryOfResidence ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${CountryOfResidence}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Libyan Arab Jamahiriya</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
@@ -263,16 +180,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Email:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${email ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${email}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            pawan.mukati@newtechfusion.com</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Contact Number:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${phone ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${phone}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            55656565</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -281,16 +198,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Marital Status:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${MaritalStatus ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${MaritalStatus}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            single</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Partner/Spouse:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${partner_spouse ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${partner_spouse}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            adsdsdsd</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -299,16 +216,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Father:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${father ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${father}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsadsadsadsa</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Mother:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${mother ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${mother}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sdsdsadsa</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -317,22 +234,22 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Children Name with age:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${name_age_children ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${name_age_children}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sdsdsads (56)</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Sibling(s):</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${siblings ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${siblings}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            asdsadsads</span>
                                          </td>
                                       </tr>
                                       <tr style="background-color: #f1f3f7;">
                                          <td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000;
                                             border-left: 1px solid #000000; font-weight: 600;font-size: 14px; padding: 8px; vertical-align: middle; "
-                                            colspan="6">(3) Educational Background of ${`${firstname}`} ${`${lastname}`}</td>
+                                            colspan="6">(3) Educational Background of saasasas sasasas</td>
                                       </tr>
                                       <tr>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000;
@@ -340,16 +257,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">University/Institution:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${University_institution_graduate ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${University_institution_graduate}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdsd</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Graduate year:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${graduate_year ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${graduate_year}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dasdsdsad</span>
                                          </td>
                                       </tr>
                                       <tr style="">
@@ -358,8 +275,8 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Profession:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${profession ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${profession}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsadsads</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
@@ -372,7 +289,7 @@ module.exports = ({
                                       <tr style="background-color: #f1f3f7;">
                                          <td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000;
                                             border-left: 1px solid #000000; font-weight: 600;font-size: 14px; padding: 8px; vertical-align: middle; "
-                                            colspan="6">(4) Professional Background of ${`${firstname}`} ${`${lastname}`}</td>
+                                            colspan="6">(4) Professional Background of saasasas sasasas</td>
                                       </tr>
                                       <tr>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000;
@@ -380,8 +297,8 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Occupational Status:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${occupational_status ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${occupational_status}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Self-employed</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
@@ -397,16 +314,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Name of actual employer:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${actual_employer ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${actual_employer}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsadsadsds</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Title:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${employer_title ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${employer_title}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsadsads</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -415,16 +332,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Nature of business:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${business_nature ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${business_nature}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            adsdsds</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
-                                            <span style="display: block; font-size: 14px;">Company’s address:</span>
+                                            <span style="display: block; font-size: 14px;">Companys address:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${Country_Business_headquarter ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${Country_Business_headquarter}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sadsdsadsad</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -433,16 +350,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Employment start year:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${employment_start_date ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${employment_start_date}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdsds</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Company website:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${company_website ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${company_website}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sdsadsd</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -451,16 +368,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Total yearly compensation in USD:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${annual_average_total_compensation ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${annual_average_total_compensation}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            less than 100000</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Number of employees:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${approx_employees ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${approx_employees}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1-30</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -469,16 +386,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Shares in the company:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${share_of_company ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${share_of_company}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdssdssd</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Political Exposed Person(PEP):</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${political_exposed_person ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${political_exposed_person}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Yes</span>
                                          </td>
                                       </tr>
                                       <tr style="background-color: #ffffff;">
@@ -492,16 +409,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Name of previous employer:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${previous_employer ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_employer}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sdssdsdsdsds</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Title:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${previous_work_title ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_work_title}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdsd</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -510,16 +427,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Nature of business:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${previous_business_nature ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_business_nature}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdsdsdsd</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
-                                            <span style="display: block; font-size: 14px;">Company’s address:</span>
+                                            <span style="display: block; font-size: 14px;">Companys address:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${previous_Country_Business_headquarter ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_Country_Business_headquarter}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdsdsd</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -528,16 +445,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Employment start date:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${previous_start_year ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_start_year}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1950</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Employment end Date:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${previous_to_year ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_to_year}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1950</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -546,16 +463,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Website of the company:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${previous_company_website ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_company_website}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sdssdss</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Shares in the company:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${previous_company_share ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_company_share}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdsdsd</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -564,22 +481,22 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Total yearly compensation in USD:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${previous_company_annual_average_total_compensation ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_company_annual_average_total_compensation}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            less than 100000</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Number of employees:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${previous_company_approx_employees ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${previous_company_approx_employees}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1-30</span>
                                          </td>
                                       </tr>
                                       <tr style="background-color: #f1f3f7;">
                                          <td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000;
                                             border-left: 1px solid #000000; font-weight: 600;font-size: 14px; padding: 8px; vertical-align: middle; "
-                                            colspan="6">(5) Financial Information of ${`${firstname}`} ${`${lastname}`}</td>
+                                            colspan="6">(5) Financial Information of saasasas sasasas</td>
                                       </tr>
                                       <tr>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000;
@@ -587,16 +504,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Avg annual Income:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${Avg_Annual_total_Income ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${Avg_Annual_total_Income}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            less than 100000</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Number of own properties:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${own_real_estate_object ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${own_real_estate_object}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            0</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -605,16 +522,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Total Real estate value:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${your_real_estate_investments ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${your_real_estate_investments}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            less than 100000</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Real estate locations:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${your_real_estate_investments_located ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${your_real_estate_investments_located}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Libyan Arab Jamahiriya,Wallis and Futuna</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -623,16 +540,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Accounts with following Bank(s):</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${list_name_of_bankable_assets ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${list_name_of_bankable_assets}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsddadsdsd</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Total bankable assets value in USD:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${bankable_assets_total_in_USD ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${bankable_assets_total_in_USD}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            less than 100000</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -641,8 +558,8 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Source of wealth:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${source_of_your_wealth ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${source_of_your_wealth}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Savings from the income of my job,sale of stake in a company</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
@@ -663,16 +580,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Investment Objective:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${investment_objective ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${investment_objective}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Safety</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Risk Tolerance</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${risk_tolerance ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${risk_tolerance}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            low</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -681,16 +598,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Investment Experience (in years):</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${investment_experience ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${investment_experience}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1-5</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Investment horizon (in years)</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${investment_horizon ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${investment_horizon}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1-5</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -699,8 +616,8 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Investment Knowledge and Experience:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${Investment_Knowledge_Experience ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${Investment_Knowledge_Experience}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Equity,Bonds,Futures,structured notes</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
@@ -722,16 +639,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Approx. amount to be transferred:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${approx_amount_transfer_new_bank_account ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${approx_amount_transfer_new_bank_account}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            USD 100'000 - 500'000</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">From Bank</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${From_which_bank_country_send_funds ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${From_which_bank_country_send_funds}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            dsdsdssdasd</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -740,16 +657,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Nr. of transfers you intend to do every year:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${transfers_intend_to_do_every_year ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${transfers_intend_to_do_every_year}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1-5</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Nr. of transfers you intend to receive every year:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${transfers_intend_to_receive_every_year ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${transfers_intend_to_receive_every_year}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            1-5</span>
                                          </td>
                                       </tr>
                                       <tr style="background-color: #f1f3f7;">
@@ -764,63 +681,25 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Nr. of people that will have signatory rights besides you:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${cfc_signature_right_people ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${cfc_signature_right_people}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            2</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Name(s) of additional signatories:</span>
                                          </td>
-                                         ${cfc_signature_right_people == 1 ? `   
+                                         
+                                            
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${full_name_additional_signatory ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            ddssdddsadsad</span>
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            asdadsadsdsadsad</span>
                                          </td>
-                                         ` : ''}
-                                         ${cfc_signature_right_people == 2 ? `   
-                                         <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${full_name_additional_signatory_one ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_one}`}</span>` : ''}
-                                            ${full_name_additional_signatory_two ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_two}`}</span>` : ''}
-                                         </td>
-                                         ` : ''}
-                                         ${cfc_signature_right_people == 3 ? `   
-                                         <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${full_name_additional_signatory_one ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_one}`}</span>` : ''}
-                                            ${full_name_additional_signatory_two ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_two}`}</span>` : ''}
-                                            ${full_name_additional_signatory_three ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_three}`}</span>` : ''}   
-                                         </td>
-                                         ` : ''}
-                                         ${cfc_signature_right_people == 4 ? `   
-                                         <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${full_name_additional_signatory_one ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_one}`}</span>` : ''}
-                                            ${full_name_additional_signatory_two ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_two}`}</span>` : ''}
-                                            ${full_name_additional_signatory_three ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_three}`}</span>` : ''}   
-                                            ${full_name_additional_signatory_four ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_four}`}</span>` : ''}
-                                         </td>
-                                         ` : ''}
-                                         ${cfc_signature_right_people == 5 ? `   
-                                         <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${full_name_additional_signatory_one ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_one}`}</span>` : ''}
-                                            ${full_name_additional_signatory_two ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_two}`}</span>` : ''}
-                                            ${full_name_additional_signatory_three ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_three}`}</span>` : ''}   
-                                            ${full_name_additional_signatory_four ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_four}`}</span>` : ''}
-                                            ${full_name_additional_signatory_five ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${full_name_additional_signatory_five}`}</span>` : ''}
-                                         </td>
-                                         ` : ''}
+                                         
+                                         
+                                         
+                                         
                                       </tr>
                                       <tr style="background-color: #f1f3f7;">
                                          <td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000;
@@ -834,16 +713,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Name of the company:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${name_of_company ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${name_of_company}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            adsadsads</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Type of company:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${kind_of_company ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${kind_of_company}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            operating company with employees</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -852,16 +731,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Names of beneficial owners of the account:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${names_beneficial_owners ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${names_beneficial_owners}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sdddadssa</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Names of directors of the company:</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${names_directors_company ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${names_directors_company}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sadsadsads</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -870,8 +749,8 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Name of the settlor of the trust/foundation:</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${names_settlor_trust_foundation ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${names_settlor_trust_foundation}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            sdsdsdsa</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
@@ -893,16 +772,16 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Do you wish to be introduced to the desired Bank?</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${desired_bank_any_bank_particular ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${desired_bank_any_bank_particular}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Yes</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
                                             <span style="display: block; font-size: 14px;">Do you wish to be introduced to an independent wealth manager?</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000; padding: 8px; border-right: 1px solid #000;">
-                                            ${potential_independent_wealth_manager ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${potential_independent_wealth_manager}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            Yes</span>
                                          </td>
                                       </tr>
                                       <tr>
@@ -911,8 +790,8 @@ module.exports = ({
                                             <span style="display: block;font-size: 14px;">Email confirmation</span>
                                          </td>
                                          <td width="25%"  style="border-bottom: 1px solid #000000; border-right: 1px solid #000; padding: 8px;">
-                                            ${confirm_email ? `<span style="display: block; font-size: 14px; vertical-align: middle;">
-                                            ${`${confirm_email}`}</span>` : ''}
+                                            <span style="display: block; font-size: 14px; vertical-align: middle;">
+                                            pawan.mukati@newtechfusion.com</span>
                                          </td>
                                          <td width="25%" style="border-bottom: 1px solid #000000;border-right: 1px solid #000;
                                             border-left: 1px solid #000; padding: 8px; vertical-align: middle;">
@@ -933,6 +812,4 @@ module.exports = ({
            </tbody>
         </table>
      </body>
-  </html> `
-
-}
+  </html> 
