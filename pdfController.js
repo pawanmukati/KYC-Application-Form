@@ -2,52 +2,26 @@
 
 const pdf = require("html-pdf");
 const path = require("path");
-const puppeteer = require('puppeteer');
 const nodemailer = require("nodemailer");
 const fs = require("fs");
 const pdfTemplate = require("./document/document");
+const {jsPDF} = require("jspdf")
 const env = require("dotenv");
+const puppeteer = require('puppeteer');
+
 env.config();
 
-
 exports.createPdf = async (req, res) => {
-  let file = pdfTemplate(req.body);
-  fs.writeFileSync('./document/invoice.html', file, 'binary');
-
   try {
-    const browser = await puppeteer.launch({ headless: true });
+    let file = pdfTemplate(req.body);
+    fs.writeFileSync('./document/invoice.html', file, 'binary');
+
+    const browser = await puppeteer.launch({ headless: false, args: ["--no-sandbox"] });
     
     const page = await browser.newPage();
-    console.log(__dirname);
-
-    // Dynamic file path based on parameters or variables
-    let dynamicPath = './document';
-    let dynamicFileName = 'invoice.html';
-    let filePath = path.resolve(__dirname, dynamicPath, dynamicFileName);
-
-    const content = fs.readFileSync(filePath, 'utf8');
-    await page.setContent(content);
-    const options = {
-      format: 'A4',
-      printBackground: true,
-      margin: {
-        top: '0.5in',
-        right: '0.5in',
-        bottom: '0.5in',
-        left: '0.5in'
-      }
-    };
-
-    // Inject custom CSS to include bottom border on <td> elements
-    await page.addStyleTag({
-      content: `
-        .for-border td {
-          border-bottom: 1px solid black;
-        }
-      `
-    });
-
-    await page.pdf({ path: 'invoice.pdf', ...options });
+    let pathStatic = `file://${__dirname}/document/invoice.html`;
+    await page.goto(pathStatic, { waitUntil: 'networkidle2' });
+    await page.pdf({ path: 'invoice.pdf', format: 'A4' });
 
     await browser.close();
 
@@ -107,5 +81,3 @@ exports.sendPdf = (req, res) => {
     }
   );
 };
-
-
