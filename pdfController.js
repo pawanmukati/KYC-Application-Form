@@ -16,7 +16,7 @@ exports.createPdf = async (req, res) => {
     let file = pdfTemplate(req.body);
     fs.writeFileSync('./document/invoice.html', file, 'binary');
 
-    const browser = await puppeteer.launch({ headless: false, args: ["--no-sandbox"] });
+    const browser = await puppeteer.launch({ headless: false, args: ["--no-sandbox","--disable-gpu"] });
     
     const page = await browser.newPage();
     let pathStatic = `file://${__dirname}/document/invoice.html`;
