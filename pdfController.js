@@ -11,20 +11,7 @@ env.config();
 exports.createPdf = (req, res) => {
   const options = {
     format: 'A4',
-    margin: {
-      top: '0.5in',
-      right: '0.5in',
-      bottom: '0.5in',
-      left: '0.5in'
-    },
-    header: {
-      height: '0.5in',
-      contents: '<div style="margin-top: 10px;"></div>'
-    },
-    footer: {
-      height: '0.5in',
-      contents: '<div style="margin-bottom: 10px;"></div>'
-    }
+    
   };
 
   pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
