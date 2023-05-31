@@ -10,8 +10,8 @@ env.config();
 
 exports.createPdf = (req, res) => {
   const options = {
-    format: 'A4',
-    border: {
+    format: 'Letter',
+    margin: {
       top: '0.5in',
       right: '0.5in',
       bottom: '0.5in',
