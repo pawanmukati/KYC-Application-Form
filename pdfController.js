@@ -6,32 +6,55 @@ const puppeteer = require('puppeteer');
 const nodemailer = require("nodemailer");
 const fs = require("fs");
 const pdfTemplate = require("./document/document");
-const {jsPDF} = require("jspdf")
 const env = require("dotenv");
-const puppeteer = require('puppeteer');
-
 env.config();
 
-exports.createPdf = (req, res) => {
-  const options = {
-    format: 'A4',
-    orientation: 'portrait',
-    border: {
-      top: '0.5in',
-      right: '0.5in',
-      bottom: '0.5in',
-      left: '0.5in'
-    }
-  };
-  
-  pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
-    if (err) {
-      console.error(err);
-      res.status(500).send('Error generating PDF');
-    } else {
-      res.send('PDF generated successfully!');
-    }
-  });
+
+exports.createPdf = async (req, res) => {
+  let file = pdfTemplate(req.body);
+  fs.writeFileSync('./document/invoice.html', file, 'binary');
+
+  try {
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    console.log(__dirname);
+
+    // Dynamic file path based on parameters or variables
+    let dynamicPath = './document';
+    let dynamicFileName = 'invoice.html';
+    let filePath = path.resolve(__dirname, dynamicPath, dynamicFileName);
+
+    const content = fs.readFileSync(filePath, 'utf8');
+    await page.setContent(content);
+    const options = {
+      format: 'A4',
+      printBackground: true,
+      margin: {
+        top: '0.5in',
+        right: '0.5in',
+        bottom: '0.5in',
+        left: '0.5in'
+      }
+    };
+
+    // Inject custom CSS to include bottom border on <td> elements
+    await page.addStyleTag({
+      content: `
+        .for-border td {
+          border-bottom: 1px solid black;
+        }
+      `
+    });
+
+    await page.pdf({ path: 'invoice.pdf', ...options });
+
+    await browser.close();
+
+    res.send('PDF generated successfully!');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error generating PDF');
+  }
 };
 
 
