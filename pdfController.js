@@ -5,32 +5,38 @@ const path = require("path");
 const nodemailer = require("nodemailer");
 const fs = require("fs");
 const pdfTemplate = require("./document/document");
-const {jsPDF} = require("jspdf")
 const env = require("dotenv");
-const puppeteer = require('puppeteer');
-
 env.config();
 
-exports.createPdf = async (req, res) => {
-  try {
-    let file = pdfTemplate(req.body);
-    fs.writeFileSync('./document/invoice.html', file, 'binary');
+exports.createPdf = (req, res) => {
+  const options = {
+    format: 'A4',
+    margin: {
+      top: '0.5in',
+      right: '0.5in',
+      bottom: '0.5in',
+      left: '0.5in'
+    },
+    header: {
+      height: '1.5in',
+      contents: '<div style="margin-top: 40px;"></div>'
+    },
+    footer: {
+      height: '0.5in',
+      contents: '<div style="margin-bottom: 40px;"></div>'
+    }
+  };
 
-    const browser = await puppeteer.launch({ headless: false, args: ["--no-sandbox","--disable-gpu"] });
-    
-    const page = await browser.newPage();
-    let pathStatic = `file://${__dirname}/document/invoice.html`;
-    await page.goto(pathStatic, { waitUntil: 'networkidle2' });
-    await page.pdf({ path: 'invoice.pdf', format: 'A4' });
-
-    await browser.close();
-
-    res.send('PDF generated successfully!');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Error generating PDF');
-  }
+  pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Error generating PDF');
+    } else {
+      res.send('PDF generated successfully!');
+    }
+  });
 };
+
 
 exports.fetchPdf = (req, res) => {
   res.sendFile(path.join(__dirname, "invoice.pdf"));
@@ -54,7 +60,7 @@ exports.sendPdf = (req, res) => {
     },
     tls: { rejectUnauthorized: false },
   });
-
+  
   smtpTransport.sendMail(
     {
       from: "pawan.mukati@newtechfusion.com",
@@ -81,3 +87,5 @@ exports.sendPdf = (req, res) => {
     }
   );
 };
+
+
