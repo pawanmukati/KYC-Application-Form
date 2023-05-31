@@ -11,21 +11,19 @@ env.config();
 exports.createPdf = (req, res) => {
   const options = {
     format: 'A4',
-    width: '8.27in', // Adjust the page width as needed
-    height: '11.69in', // Adjust the page height as needed
-    margin: {
+    border: {
       top: '0.5in',
       right: '0.5in',
       bottom: '0.5in',
       left: '0.5in'
     },
     header: {
-      height: '0.5in',
-      contents: '<div style="margin-top: 10px;"></div>'
+      height: '1.5in',
+      contents: '<div style="margin-top: 40px;"></div>'
     },
     footer: {
       height: '0.5in',
-      contents: '<div style="margin-bottom: 10px;"></div>'
+      contents: '<div style="margin-bottom: 40px;"></div>'
     }
   };
 
