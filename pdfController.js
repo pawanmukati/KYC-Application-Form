@@ -1,6 +1,7 @@
 // we use html pdf
 
-const pdf = require("html-pdf");
+// const pdf = require("html-pdf");
+const puppeteer = require('puppeteer');
 const path = require("path");
 const nodemailer = require("nodemailer");
 const fs = require("fs");
@@ -8,34 +9,39 @@ const pdfTemplate = require("./document/document");
 const env = require("dotenv");
 env.config();
 
-exports.createPdf = (req, res) => {
-  const options = {
-    format: 'A4',
-    border: {
-      top: '0.5in',
-      right: '0.5in',
-      bottom: '0.5in',
-      left: '0.5in',
-    },
-    // Add a custom CSS rule to prevent content cutting
-    height: '11.69in', // Adjust the page height as needed
-    width: '8.27in', // Adjust the page width as needed
-  };
+exports.createPdf = async (req, res) => {
+  try {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
 
-  // Read the HTML template file
-  const htmlTemplatePath = path.resolve(__dirname, './document/invoice.html');
-  const htmlTemplate = fs.readFileSync(htmlTemplatePath, 'utf8');
+    // Read the HTML template file
+    const htmlTemplatePath = path.resolve(__dirname, './document/invoice.html');
+    const htmlTemplate = fs.readFileSync(htmlTemplatePath, 'utf8');
 
-  // Convert the HTML template to PDF
-  pdf.create(htmlTemplate, options).toFile('invoice.pdf', (err) => {
-    if (err) {
-      console.error(err);
-      res.status(500).send('Error generating PDF');
-    } else {
-      res.send('PDF generated successfully!');
-    }
-  });
+    await page.setContent(htmlTemplate);
+
+    // Wait for any asynchronous content to load
+    await page.waitForTimeout(1000);
+
+    const pdfOptions = {
+      path: 'invoice.pdf',
+      format: 'A4',
+      printBackground: true,
+    };
+
+    await page.pdf(pdfOptions);
+
+    await browser.close();
+
+    res.send('PDF generated successfully!');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error generating PDF');
+  }
 };
+
+
+// ------
 exports.fetchPdf = (req, res) => {
   res.sendFile(path.join(__dirname, "invoice.pdf"));
 };
