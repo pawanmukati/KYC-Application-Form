@@ -11,13 +11,12 @@ env.config();
 
 exports.createPdf = async (req, res) => {
   try {
-    // const browser = await puppeteer.launch({headless: false,args: ["--no-sandbox"] });
     const browser = await puppeteer.launch({
-      args: ['--no-sandbox','--disable-setuid-sandbox','--font-render-hinting=none'],
-      executablePath: process.env.PUPPETEER_EXEC_PATH, // set by docker container
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--font-render-hinting=none'],
+      executablePath: process.env.PUPPETEER_EXEC_PATH, // Set the path to your Puppeteer executable if needed
       headless: false,
     });
-    // const browser = await puppeteer.launch({ignoreDefaultArgs: ['--disable-extensions']})
+
     const page = await browser.newPage();
 
     // Read the HTML template file
