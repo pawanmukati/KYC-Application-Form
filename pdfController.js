@@ -13,9 +13,9 @@ exports.createPdf = async (req, res) => {
   try {
     // const browser = await puppeteer.launch({headless: false,args: ["--no-sandbox"] });
     const browser = await puppeteer.launch({
-      executablePath: '/usr/bin/chromium-browser',
+      args: ['--no-sandbox','--disable-setuid-sandbox','--font-render-hinting=none'],
+      executablePath: process.env.PUPPETEER_EXEC_PATH, // set by docker container
       headless: false,
-      args: ['--no-sandbox']
     });
     // const browser = await puppeteer.launch({ignoreDefaultArgs: ['--disable-extensions']})
     const page = await browser.newPage();
