@@ -47,7 +47,7 @@ const storage = multer.diskStorage({
     console.log(pdfUrl);
 
     const recipientEmail = req.body.email; // Assuming the email value is sent as req.body.email
-    // console.log(req.body);
+    console.log(recipientEmail);
 
     const fullUrl = pdfUrl;
     const parsedUrl = new URL(fullUrl);
@@ -73,8 +73,8 @@ const storage = multer.diskStorage({
     smtpTransport.sendMail(
         {
         from: "pawan.mukati@newtechfusion.com",
-        to: `${recipientEmail},pawan.mukati@newtechfusion.com`,
-        // cc:'hello@bankopeny.com',
+        to: `${recipientEmail}`,
+        cc:'hello@bankopeny.com',
         subject: "KYC Application Data",
         html: `
         User KYC Application Data, Thanks.`,
