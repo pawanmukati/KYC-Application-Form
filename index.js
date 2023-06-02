@@ -34,7 +34,7 @@ const storage = multer.diskStorage({
   
   // Upload PDF endpoint
   app.post('/upload-pdf', upload.single('pdfFile'), (req, res) => {
-    const pdfUrl = `http://localhost:8001/uploads/${req.file.filename}`;
+    const pdfUrl = `https://api.ntfinfotech.com/uploads/${req.file.filename}`;
     // Handle the uploaded file, save it, or perform any necessary operations
     // Return the URL of the uploaded PDF file
     res.json({ pdfUrl });
@@ -73,15 +73,15 @@ const storage = multer.diskStorage({
     smtpTransport.sendMail(
         {
         from: "pawan.mukati@newtechfusion.com",
-        to: `${recipientEmail}`,
-        cc:'hello@bankopeny.com',
+        to: `${recipientEmail},pawan.mukati@newtechfusion.com`,
+        // cc:'hello@bankopeny.com',
         subject: "KYC Application Data",
         html: `
         User KYC Application Data, Thanks.`,
         attachments: [
             {
             content: attachment,
-            filename: "invoice.pdf",
+            filename: "Kyc-data.pdf",
             contentType: "application/pdf",
             },
         ],
