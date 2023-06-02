@@ -31,10 +31,10 @@ const storage = multer.diskStorage({
   });
   
   const upload = multer({ storage });
-  
   // Upload PDF endpoint
   app.post('/upload-pdf', upload.single('pdfFile'), (req, res) => {
     const pdfUrl = `https://api.ntfinfotech.com/uploads/${req.file.filename}`;
+    // const pdfUrl = `http://localhost:8001/uploads/${req.file.filename}`;
     // Handle the uploaded file, save it, or perform any necessary operations
     // Return the URL of the uploaded PDF file
     res.json({ pdfUrl });
@@ -81,7 +81,7 @@ const storage = multer.diskStorage({
         attachments: [
             {
             content: attachment,
-            filename: "Kyc-data.pdf",
+            filename: "Kyc-Application-Data.pdf",
             contentType: "application/pdf",
             },
         ],
