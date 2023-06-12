@@ -44,8 +44,8 @@ const storage = multer.diskStorage({
   // Upload PDF endpoint
   app.post('/upload-pdf', upload.single('pdfFile'), (req, res) => {
     
-    // const pdfUrl = `https://api.ntfinfotech.com/uploads/${req.file.filename}`;
-    const pdfUrl = `http://localhost:8001/uploads/${req.file.filename}`;
+    const pdfUrl = `https://api.ntfinfotech.com/uploads/${req.file.filename}`;
+//     const pdfUrl = `http://localhost:8001/uploads/${req.file.filename}`;
     // Handle the uploaded file, save it, or perform any necessary operations
     // Return the URL of the uploaded PDF file
     res.json({ pdfUrl });
