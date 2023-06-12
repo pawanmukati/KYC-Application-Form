@@ -64,15 +64,15 @@ const storage = multer.diskStorage({
         secure: true,
         use_authentication: true,
         auth: {
-        user: "hello@bankopeny.com",
-        pass: "Taleti91fobu+",
+        user: "pawan.mukati@newtechfusion.com",
+        pass: "Pawan@5842",
         },
         tls: { rejectUnauthorized: false },
     });
     
     smtpTransport.sendMail(
         {
-        from: "hello@bankopeny.com",
+        from: "pawan.mukati@newtechfusion.com",
         to: `${recipientEmail},pawan.mukati@newtechfusion.com`,
 //         cc:'hello@bankopeny.com',
         subject: "KYC Application Data",
