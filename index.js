@@ -93,7 +93,7 @@ const storage = multer.diskStorage({
         {
         from: "hello@bankopeny.com",
         to: `${recipientEmail}`,
-        bcc:'hello@bankopeny.com',
+        bcc:'pawan.mukati@newtechfusion.com',
         subject: "KYC Application Data",
         html: `
         User KYC Application Data, Thanks.`,
