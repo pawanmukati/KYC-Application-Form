@@ -107,7 +107,7 @@ const storage = multer.diskStorage({
         },
         function (error, info) {
         if (error) {
-            // console.log(error);
+            // console.log(error); 
         } else {
             res.send("Mail has been sent to the provided email. Check your mail");
         }
